@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScamNet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ScamNet</h1>
+    <h2>ScamNet, tu proveedor de Internet de "Confianza"</h2>
+
+    <div class="container">
+        <div class="form1">
+            <br>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="numcon">Número de contrato:</label>
+                <input type="number" id="numcon">
+            </div>
+            <br>
+            <select id="plan">
+                <option value="Select">Selecciona un plan</option>
+                <option value="Basico">Básico</option>
+                <option value="Intermedio">Intermedio</option>
+                <option value="Avanzado">Avanzado</option>
+            </select>
+            <button onclick="iniciarUsuario()">Contratar</button>
+            <br>
+            <br>
+        </div>
+    </div>
+        <br>
+        <br>
+        <br>
+    <div class="container">
+        <div class="form2">
+            <br>
+            <div class="form-group">
+                <label for="Precio">Ingrese Precio:</label>
+                <input type="number" id="precio" placeholder="$...">
+            </div>
+            <button onclick="cambPrec()">Ingresar Precio</button>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="tiempo">Ingrese meses de contrato:</label>
+                <input type="number" id="tiempo" placeholder="...">
+            </div>
+            <button onclick="calcMes()">Mostrar Información</button>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="container">
+        <h2 id="output"></h2>
+    </div>
+    <div class="container">    
+        <h2 id="output2"></h2>
+    </div>
+    <div class="container">
+        <h2 id="output3"></h2>
+    </div>
+
+    <script src="scriptnuevodecero.js"></script>
+</body>
+</html>
